@@ -11,3 +11,8 @@ else{
     require "controllers/404.php";
     
 }
+
+if ($uri === '/student/dashboard') {
+    require 'controllers/student/dashboard.php';
+}
+

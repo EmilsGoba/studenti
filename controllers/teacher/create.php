@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ]);
 
         // Redirect after success
-        header("Location: /teacher/dashboard");
+        header("Location: /grades");
         exit;
     }
 }
