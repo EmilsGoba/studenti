@@ -47,9 +47,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             );
             $passwordHashed = password_hash($passwordPlain, PASSWORD_DEFAULT);
 
-            // Insert into users
-            $db->query("INSERT INTO users (username, password, role, created_at) VALUES (?, ?, 'student', ?)", [
+            // Insert into users (with plain password stored)
+            $db->query("INSERT INTO users (username, password, plain_password, role, created_at) VALUES (?, ?, ?, 'student', ?)", [
                 $username,
+                $passwordHashed,
                 $passwordPlain,
                 date('Y-m-d H:i:s')
             ]);

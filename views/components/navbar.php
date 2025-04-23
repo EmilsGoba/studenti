@@ -7,6 +7,7 @@
         <li>  <a href="/create" class="Par-mums">Izveidot</a> </li>
         <?php endif ?>
         <li> <a href="/logout" class="home">Logout</a> </li>
+        <li> <a href="/students">students</a> </li>
         
     </nav>
 </header>

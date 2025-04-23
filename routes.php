@@ -8,4 +8,6 @@ return [
     "/create"  => "controllers/teacher/create.php",
     "/edit"  => "controllers/teacher/edit.php",
     "/logout"  => "controllers/logout.php",
+    "/students"  => "controllers/students.php",
+
 ];
